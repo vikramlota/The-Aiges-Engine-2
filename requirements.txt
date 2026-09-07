@@ -1,0 +1,25 @@
+# The AIGES Engine / Vishwas AI - Dependencies
+
+# UI & Application
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+
+# Ingestion & APIs
+requests>=2.31.0
+openpyxl>=3.1.2
+
+# OCR & Image Processing
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# AI & LLM Compliance Auditing
+pydantic>=2.0.0
+langchain-core>=0.3.0
+langchain-ollama>=0.2.0
+langchain-google-genai>=2.0.0
+langchain-groq>=0.2.0
+
+# Optional: Transformer-based Claim Classification
+transformers>=4.40.0
+torch>=2.0.0
+apscheduler==3.11.3

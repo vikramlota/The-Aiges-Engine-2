@@ -1,0 +1,66 @@
+"""
+Core compliance engine, rules, and data structures for The AIGES Engine / Vishwas AI.
+"""
+
+from core.models import VisualAuditResult, UnifiedAuditReport
+from core.rules import (
+    APPROVED_LABELS,
+    AMBIGUOUS_LABELS,
+    PLATFORMS,
+    CONTENT_TYPES,
+    CONFIRMED_ABSENT,
+    MATERIAL_CONNECTIONS,
+    ASCI_CATEGORIES,
+    SHORT_LABELS,
+    RULE_DESCRIPTIONS,
+    RISK_CRITICAL,
+    RISK_HIGH,
+    RISK_MEDIUM,
+    RISK_LOW,
+    RISK_ADVISORY,
+    RISK_ORDER,
+    RISK_NOTES,
+    RISK_LEVELS,
+    risk_of,
+    highest_risk,
+)
+from core.engine import (
+    PostInput,
+    AuditResult,
+    CheckOutcome,
+    audit_post,
+    batch_audit,
+    aggregate_summary,
+    EXPERT_REVIEW,
+)
+
+__all__ = [
+    "VisualAuditResult",
+    "UnifiedAuditReport",
+    "APPROVED_LABELS",
+    "AMBIGUOUS_LABELS",
+    "PLATFORMS",
+    "CONTENT_TYPES",
+    "CONFIRMED_ABSENT",
+    "MATERIAL_CONNECTIONS",
+    "ASCI_CATEGORIES",
+    "SHORT_LABELS",
+    "RULE_DESCRIPTIONS",
+    "RISK_CRITICAL",
+    "RISK_HIGH",
+    "RISK_MEDIUM",
+    "RISK_LOW",
+    "RISK_ADVISORY",
+    "RISK_ORDER",
+    "RISK_NOTES",
+    "RISK_LEVELS",
+    "risk_of",
+    "highest_risk",
+    "PostInput",
+    "AuditResult",
+    "CheckOutcome",
+    "audit_post",
+    "batch_audit",
+    "aggregate_summary",
+    "EXPERT_REVIEW",
+]
